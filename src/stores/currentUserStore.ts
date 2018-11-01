@@ -1,7 +1,7 @@
-import { observable, action } from 'mobx';
+import { action, observable } from 'mobx';
 
 export class CurrentUserStore {
-    @observable userName?: string
+    @observable public userName?: string
 
     @observable get isLoggedIn(): boolean {
         if (this.userName) {
